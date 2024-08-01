@@ -1,0 +1,76 @@
+%!TEX TS-program = xelatex
+%!TEX options = -aux-directory=Debug -shell-escape -file-line-error -interaction=nonstopmode -halt-on-error -synctex=1 "%DOC%"
+\documentclass{article}
+\input{latex-submodule/template.tex}
+
+\usepackage[explicit]{titlesec} % Modify sections
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{#1}
+
+\lhead{\unitName \\ \unitTime}
+\chead{\docTitle}
+\rhead{\authorName \\ \authorStudentNumber}
+\cfoot{\thepage}
+
+\newcommand{\docTitle}{Assessment name}
+\newcommand{\dueDate}{1 January, 20yy}
+\newcommand{\dueTime}{11:59pm}
+\newcommand{\unitName}{Unit name}
+\newcommand{\unitTime}{Semester s, yyyy}
+\newcommand{\unitInstructorName}{Unit coordinator name}
+\newcommand{\authorName}{Student name}
+\newcommand{\authorStudentNumber}{Student number}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\unitName}} \\
+    \vspace{0.1in}
+    \textbf{\docTitle} \\
+    \vspace{0.1in}
+    \small{Due\ on\ \dueDate\ at\ \dueTime} \\
+    \vspace{0.1in}
+    \large{\textit{\unitInstructorName}} \\
+    \vspace{0.1in}
+    \unitTime
+    \vspace{2in}
+}
+
+\author{\textbf{\authorName} \\ \authorStudentNumber}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+\section{Question 1}
+Given
+\begin{equation}
+    f\left( x \right) =
+    \begin{cases}
+        x^3 & 0 \leqslant x < 2 \\
+        -x  & 2 \leqslant x < 4 \\
+        0   & \text{otherwise}.
+    \end{cases}
+\end{equation}
+\begin{enumerate}[label=(\alph*)]
+    \item Find the slope of \(f\left( x \right)\) at \(x = 1\).
+          \begin{solution}
+              The first derivative of \(f\left( x \right)\) is given by
+              \begin{equation*}
+                  f'\left( x \right) =
+                  \begin{cases}
+                      0                    & x \leqslant 0     \\
+                      3x^2                 & 0 < x < 2         \\
+                      -1                   & 2 < x < 4         \\
+                      0                    & x > 4             \\
+                      \text{indeterminate} & \text{otherwise}.
+                  \end{cases}
+              \end{equation*}
+              At \(x = 1\), the slope of the function \(f\left( x \right)\) is
+              \(3 \left( 1 \right)^2 = 3\).
+          \end{solution}
+\end{enumerate}
+\end{document}
