@@ -1,0 +1,30 @@
+{
+    "latex-workshop.bibtex-format.tab": "4 spaces",
+    "latex-workshop.intellisense.file.base": "both",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.build.forceRecipeUsage": false,
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latexindent.path": "path/to/latexindent.exe",
+    "latex-workshop.latexindent.args": [
+        "-c",
+        "%DIR%/Debug/",
+        "%TMPFILE%",
+        "-m",
+        "-l",
+        "path/to/latexindent.yaml",
+        "-w"
+    ],
+    "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
+    "latex-workshop.linting.chktex.enabled": true,
+    "latex-workshop.linting.chktex.exec.args": [
+        "-n1",
+        "-n3",
+        "-n22",
+        "-n30",
+        "-n36",
+        "-e16",
+        "-e46",
+        "-q"
+    ],
+    "latex-workshop.message.error.show": false
+}
