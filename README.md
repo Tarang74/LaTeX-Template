@@ -6,4 +6,4 @@ To get started, clone this repository and the [submodule](https://github.com/tar
 preamble of this document.
 
 [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) users may
-wish to copy the options from [settings.json](settings.json).
+wish to copy the options from [settings.json](.vscode/settings.json).

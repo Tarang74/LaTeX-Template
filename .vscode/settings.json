@@ -4,8 +4,9 @@
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.build.forceRecipeUsage": false,
     "latex-workshop.latex.clean.subfolder.enabled": true,
-    "latex-workshop.latexindent.path": "path/to/latexindent.exe",
-    "latex-workshop.latexindent.args": [
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.latexindent.path": "path/to/latexindent.exe",
+    "latex-workshop.formatting.latexindent.args": [
         "-c",
         "%DIR%/Debug/",
         "%TMPFILE%",
