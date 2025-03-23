@@ -16,16 +16,5 @@
         "-w"
     ],
     "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
-    "latex-workshop.linting.chktex.enabled": true,
-    "latex-workshop.linting.chktex.exec.args": [
-        "-n1",
-        "-n3",
-        "-n22",
-        "-n30",
-        "-n36",
-        "-e16",
-        "-e46",
-        "-q"
-    ],
     "latex-workshop.message.error.show": false
 }
